@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: jdt17.spring.basic
+server:
+  port: ${JDT_DASAR_SERVICE_PORT:8081}
