@@ -2,7 +2,6 @@ package com.indivaragroup.jdt17.spring.basic.exam;
 
 import com.indivaragroup.jdt17.spring.basic.exam.model.Warehouse;
 import com.indivaragroup.jdt17.spring.basic.exam.service.Sales;
-import org.springframework.beans.factory.annotation.Qualifier;
 
 public class DistributionService {
     private Warehouse warehouse;
@@ -28,11 +27,11 @@ public class DistributionService {
 
     public void distributeItem() {
         System.out.println("Sales---------------");
-        System.out.println("Name: " + sale1.getName() + " | Region: " + sale1.getRegion() + " | Vehicle: " + sale1.getVehicleType() + " | " + warehouse.getWarehouseName() + " | " + warehouse.getStock());
-        System.out.println("Name: " + sale2.getName() + " | Region: " + sale2.getRegion() + " | Vehicle: " + sale2.getVehicleType() + " | " + warehouse.getWarehouseName() + " | " + warehouse.getStock());
-        System.out.println("Name: " + sale3.getName() + " | Region: " + sale3.getRegion() + " | Vehicle: " + sale3.getVehicleType() + " | " + warehouse.getWarehouseName() + " | " + warehouse.getStock());
-        System.out.println("Name: " + sale4.getName() + " | Region: " + sale4.getRegion() + " | Vehicle: " + sale4.getVehicleType() + " | " + warehouse.getWarehouseName() + " | " + warehouse.getStock());
-        System.out.println("Name: " + sale5.getName() + " | Region: " + sale5.getRegion() + " | Vehicle: " + sale5.getVehicleType() + " | " + warehouse.getWarehouseName() + " | " + warehouse.getStock());
+        System.out.println("Sales: " + sale1.getName() + " | Wilayah: " + sale1.getRegion() + " | Kendaraan: " + sale1.getVehicleType() + " | Gudang: " + warehouse.getWarehouseName() + " (" + warehouse.getStock() + ")");
+        System.out.println("Sales: " + sale2.getName() + " | Wilayah: " + sale2.getRegion() + " | Kendaraan: " + sale2.getVehicleType() + " | Gudang: " + warehouse.getWarehouseName() + " (" + warehouse.getStock() + ")");
+        System.out.println("Sales: " + sale3.getName() + " | Wilayah: " + sale3.getRegion() + " | Kendaraan: " + sale3.getVehicleType() + " | Gudang: " + warehouse.getWarehouseName() + " (" + warehouse.getStock() + ")");
+        System.out.println("Sales: " + sale4.getName() + " | Wilayah: " + sale4.getRegion() + " | Kendaraan: " + sale4.getVehicleType() + " | Gudang: " + warehouse.getWarehouseName() + " (" + warehouse.getStock() + ")");
+        System.out.println("Sales: " + sale5.getName() + " | Wilayah: " + sale5.getRegion() + " | Kendaraan: " + sale5.getVehicleType() + " | Gudang: " + warehouse.getWarehouseName() + " (" + warehouse.getStock() + ")");
 
     }
 }
