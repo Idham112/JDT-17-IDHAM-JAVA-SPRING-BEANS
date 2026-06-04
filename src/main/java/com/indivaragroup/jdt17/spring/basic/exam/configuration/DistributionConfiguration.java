@@ -13,11 +13,11 @@ public class DistributionConfiguration {
     @Bean
     public DistributionService distributionService(
             Warehouse warehouse,
-            @Qualifier("firstMotor") Sales firstMotor,
-            @Qualifier("secondMotor") Sales secondMotor,
-            @Qualifier("thirdMotor") Sales thirdMotor,
-            @Qualifier("mobilFirst") Sales mobilFirst,
-            @Qualifier("mobilSecond") Sales mobilSecond) {
-        return new DistributionService(warehouse, firstMotor, secondMotor, thirdMotor, mobilFirst, mobilSecond);
+            @Qualifier("firstMotor") Sales sale1,
+            @Qualifier("secondMotor") Sales sale2,
+            @Qualifier("thirdMotor") Sales sale3,
+            @Qualifier("mobilFirst") Sales sale4,
+            @Qualifier("mobilSecond") Sales sale5) {
+        return new DistributionService(warehouse, sale1, sale2, sale3, sale4, sale5);
     }
 }
